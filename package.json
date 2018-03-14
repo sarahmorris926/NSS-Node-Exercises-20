@@ -1,0 +1,24 @@
+{
+  "name": "NSS-Node-Exercises-20",
+  "version": "1.0.0",
+  "description": "NSS Node.JS Exercises: 20 - Express Hello World",
+  "main": "express-hello-world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon express-hello-world.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahmorris926/NSS-Node-Exercises-20.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahmorris926/NSS-Node-Exercises-20/issues"
+  },
+  "homepage": "https://github.com/sarahmorris926/NSS-Node-Exercises-20#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
