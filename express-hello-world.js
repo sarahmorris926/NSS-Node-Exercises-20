@@ -1,14 +1,19 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+require('dotenv').config();
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('<h1>Hello World!</h1>')
 })
 
-app.listen(3000)
+
+
+
+app.listen()
 
 
 // outputs HELLO WORLD when making GET request to root (/) url
+
 
 
 // outputs time stamp - new Date().toLocaleTimeString() - when making GET request to (/time) url
