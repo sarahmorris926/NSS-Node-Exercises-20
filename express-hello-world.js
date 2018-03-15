@@ -9,7 +9,13 @@ app.get('/', (req, res) => {
 
 
 // outputs time stamp - new Date().toLocaleTimeString() - when making GET request to (/time) url
+app.get('/time', (req, res) => {
+    new Date().toLocaleTimeString()
+})
 
 
 // use env variable for port, use 8080 when one is not provided
-app.listen()
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+    console.log('Listening on port ', port);
+});
