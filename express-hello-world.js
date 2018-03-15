@@ -8,9 +8,16 @@ app.get('/', (req, res) => {
 })
 
 
-// outputs time stamp - new Date().toLocaleTimeString() - when making GET request to (/time) url
+// outputs time stamp when making GET request to (/time) url in ISO format
 app.get('/time', (req, res) => {
-    new Date().toLocaleTimeString()
+    let currentTime = new Date().toISOString('en-US')
+    res.send(`<h3>Current Time: ${currentTime}</h3>`)
+})
+
+// stretch goal - outputs time stamp when making GET request in better format
+app.get('/bettertime', (req, res) => {
+    let currentTime = new Date().toLocaleTimeString('en-US')
+    res.send(`<h3>Current Time: ${currentTime}</h3>`)
 })
 
 
